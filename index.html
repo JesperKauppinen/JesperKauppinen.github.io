@@ -25,16 +25,15 @@
 
     <script>
       function toggle(parent) {
-        const children = parent.children;
-        console.log(children)
-        children.forEach(child => {
-          console.log(child)
-          if (child.style.display === "block") {
-            child.style.display = "none";
-          } else {
-            child.style.display = "block";
-          }
-        });
+        const children = parent.nextElementSibling;
+
+        if (children.style.display == "none") {
+          children.style.display = "block";
+        }
+        else {
+         children.style.display = "none";
+        }
+
       }
     </script>
 
@@ -85,7 +84,7 @@
 <h2 id="tech-related-skills">Tech related skills</h2>
 <h4 id="languages-and-frameworks">Languages and Frameworks:</h4>
 <ul>
-  <li onclick="toggle(this)">Python
+  <li><div onclick="toggle(this)">Python</div>
     <ul>
       <li><a href="https://flask.palletsprojects.com/en/2.0.x/">Flask</a> for web app development
         <ul>

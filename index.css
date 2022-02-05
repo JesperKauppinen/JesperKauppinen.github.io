@@ -51,6 +51,7 @@
 }
 
 /* Styling of links inside list property */
-.li a{text-decoration: none;}
+li a{text-decoration: none;}
 
+li {display:list;}
 
