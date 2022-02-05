@@ -1,9 +1,13 @@
+/* Landing style */
+.landing {
+ background-color:#159957;
+ background-image:linear-gradient(120deg, #155799, #159957)
+}
+
 /* Style the navigation bar */
 .topnav {
-      background-color: rgba("0000");
-      overflow: hidden;
-      height:0px;
-    }
+  overflow: hidden;
+}
 
 /* Style the links inside the navigation bar */
 .topnav a {
@@ -14,17 +18,39 @@
   text-decoration: none;
   font-size: 17px;
 }
-
-.landing {
- background-color:#159957;
- background-image:linear-gradient(120deg, #155799, #159957)
-}
-
 /* Change the color of links on hover */
 .topnav a:hover {
   background-color: #ddd;
   color: black;
 }
 
+
+.header-text, .topnav {
+ word-wrap:break-word;
+ max-width:64rem;
+ padding:2rem 6rem;
+ margin:0 auto;
+}
+@media screen and (min-width: 42em) and (max-width: 64em) {
+ .header-text, .topnav {
+  padding:2rem 4rem;
+  font-size:1.1rem
+ }
+}
+@media screen and (max-width: 42em) {
+ .header-text, .topnav {
+  padding:2rem 1rem;
+  font-size:1rem
+ }
+}
+.header-text h1 {
+ color:#FFF;
+}
+.header-text h2 {
+ color:#FFF;
+}
+
 /* Styling of links inside list property */
 .li a{text-decoration: none;}
+
+
