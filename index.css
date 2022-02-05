@@ -2,6 +2,7 @@
 .topnav {
       background-color: rgba("0000");
       overflow: hidden;
+      height:0px;
     }
 
 /* Style the links inside the navigation bar */
@@ -12,6 +13,11 @@
   padding: 14px 16px;
   text-decoration: none;
   font-size: 17px;
+}
+
+.landing {
+ background-color:#159957;
+ background-image:linear-gradient(120deg, #155799, #159957)
 }
 
 /* Change the color of links on hover */
