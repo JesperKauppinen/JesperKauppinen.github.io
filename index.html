@@ -18,24 +18,13 @@
     
     <!-- define stylesheets -->
     <link rel="stylesheet" href="https://pages-themes.github.io/cayman/assets/css/style.css?v=29f8a343aad3bd9eea1173c01ab45a8a20acd7ff">
-    <link rel="stylesheet" href="/index.css">
+    <link rel="stylesheet" href="index.css">
 
     <!-- favicon -->
     <link rel="shortcut icon" type="image/x-icon" href="https://avatars.githubusercontent.com/u/76889226">
 
-    <script>
-      function toggle(parent) {
-        const children = parent.nextElementSibling;
-
-        if (children.style.display == "none") {
-          children.style.display = "block";
-        }
-        else {
-         children.style.display = "none";
-        }
-
-      }
-    </script>
+    <!-- import java-script -->
+     <script src="index.js"></script>
 
   </head>
   <body>
@@ -67,25 +56,25 @@
 
 <h2 id="about">Who am I?</h2>
 <p>Hi, My name is Jesper Kauppinen alias Jeb. I come from Finland. I love solving problems and creating content for people. I have programmed for about 3 years now on my spare time. My other hobbies are ethical hacking, astro photographing and cooking.</p>
-
+<hr>
 <h2 id="education">Education</h2>
 <ul>
   <li>High-school</li>
   <li>I start studying computer science in autumn 2020</li>
 </ul>
-
+<hr>
 <h2 id="tech-related-work-experience">Tech related work experience</h2>
 <h4 id="virtual-training-support-person-in-finnish-airforces-9-monts-of-military-service">Virtual Training Support Person in Finnish Airforces (9 monts of military service)</h4>
 <ul>
   <li>System adminstrator</li>
   <li>Programmer</li>
 </ul>
-
+<hr>
 <h2 id="tech-related-skills">Tech related skills</h2>
 <h4 id="languages-and-frameworks">Languages and Frameworks:</h4>
 <ul>
-  <li><div onclick="toggle(this)">Python</div>
-    <ul>
+  <li><button class="btn-skill" onclick="toggle(this)">Python<span> →</span></button>
+    <ul class="hidden-toggle">
       <li><a href="https://flask.palletsprojects.com/en/2.0.x/">Flask</a> for web app development
         <ul>
           <li><a href="">socket io</a> for websockets</li>
@@ -99,14 +88,18 @@
       <li><a href="">Kivy</a> for mobile app development</li>
     </ul>
   </li>
-  <li>HTML and CSS</li>
-  <li>Lua
-    <ul>
+  <li><button class="btn-skill" onclick="toggle(this)">HTML and CSS<span> →</span></button>
+    <ul class="hidden-toggle">
+      <li>Nothing here :)</li>
+    </ul>
+  </li>
+  <li><button class="btn-skill" onclick="toggle(this)">Lua<span> →</span></button>
+    <ul class="hidden-toggle">
       <li><a href="">FiveM</a> roleplay framework for GTA V</li>
     </ul>
   </li>
-  <li>JS
-    <ul>
+  <li><button class="btn-skill" onclick="toggle(this)">JS<span> →</span></button>
+    <ul class="hidden-toggle">
       <li>Web development</li>
       <li>React</li>
     </ul>
@@ -115,9 +108,10 @@
 
 <h4 id="operating-systems">Operating Systems:</h4>
 <ul>
-  <li>Linux
-    <ul>
-      <li>Kali is my personal choise</li>
+  <li><button class="btn-skill" onclick="toggle(this)">Linux<span> →</span></button>
+    <ul class="hidden-toggle">
+      <li>Kali is my personal choice</li>
+      <li>Experience with Ubuntu server</li>
     </ul>
   </li>
   <li>Windows</li>
@@ -127,7 +121,7 @@
 <ul>
   <li>Git &amp; Github</li>
 </ul>
-
+<hr>
 <h2 id="contact-me">Contact me</h2>
       <div>
         <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABmJLR0QA/wD/AP+gvaeTAAABo0lEQVRIie2Uv0tbURTHP+cmUnBQ1LwMUXcdhA6t/0NpKy7PPHBwqS+C2rWOGe0mltLcV7o4iDGDQwb/BBd1FFepVOgLuoggJu84mNQfaUwkgVLwM9337rmfL+edy4Nn/jVSWySs91ZQCwy2p9RjRPzQz28DmNukKNe+HECGUGztKX5vAwgzeak/1DqOTSsw/JeAakEuXYzHYwsnH9aPniJO/PBSUtaVh+9NXaXwrlypHDg57xObbqypOZs1Cev5UtZDwG0aoKoTAiVEl50zszvwzR1v5HYC92Uydbhzczn0XJSZpgGluc1inItRRD8DY8aYnaRN2/7V6Z5aTcq+73aCqWXU7KrqK4Ggctk18nsuv/bQVzcDgF+Z4gWwlPjuFiQygYIfe1F+k7RTHwGukFWUYWBfTeSHs4W9Rl3Wz+BuN7OFvfBk9LUiGaBXkS1FtoABVJbCvmi89Ii8YQf3yGajEgT9X71t06VfAKIrWTyd3/jZ9GxLAVWqwslW62s8+ok6wf8fcGcGegwyVP2XtMufC3DbgYh/E9IBuRq/A55nOsQ1RImH9Kfi5LAAAAAASUVORK5CYII="

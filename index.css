@@ -55,3 +55,16 @@ li a{text-decoration: none;}
 
 li {display:list;}
 
+.btn-skill {
+  background-color: #fff;
+  border-radius: 8px;
+  border-width: 0;
+  box-sizing: border-box;
+  color: #606c71;
+  padding-top:1em;
+
+}
+
+.hidden-toggle {
+ display:none;
+}
