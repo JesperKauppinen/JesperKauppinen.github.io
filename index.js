@@ -3,6 +3,8 @@
 // and toggle folding symbol
 function toggle(parent) {
 
+    // TODO: check if those elements exist before trying to change them to prevent errors.
+
     // Get list element
     const sibling = parent.nextElementSibling;
     // Get →/↓ symbol element
