@@ -53,3 +53,11 @@ function showSlides(n) {
   slides[slideIndex-1].style.display = "block";
   dots[slideIndex-1].className += " active";
 }
+
+function copyToClipBoard (element) {
+    content = element;
+    let text = content.children[0].innerHTML;
+    navigator.clipboard.writeText(text);
+    content.children[1].innerText = ' *text copied*';
+    setTimeout(function(){content.children[1].innerText = "";}, 2000);
+}
